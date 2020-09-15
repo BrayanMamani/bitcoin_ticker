@@ -77,11 +77,7 @@ class _PriceScreenState extends State<PriceScreen> {
               onSelectedItemChanged: (selectedIndex) {
                 print(selectedIndex);
               },
-              children: <Widget>[
-                Text('USD'),
-                Text('EUR'),
-                Text('GBP'),
-              ],
+              children: getPickerItems(),
             ),
           ),
         ],
